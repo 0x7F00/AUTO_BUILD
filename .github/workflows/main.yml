@@ -81,6 +81,10 @@ jobs:
           export PATH=$GITHUB_WORKSPACE/kernel_workspace/clang/bin:$PATH
           export KBUILD_BUILD_HOST=localhost
           export KBUILD_BUILD_USER=smile
+          export EXPECTED_SIZE_RSUNTK=0x29c
+          export EXPECTED_SIZE=0x29c
+          export EXPECTED_HASH_RSUNTK=946b0557e450a6430a0ba6b6bccee5bc12953ec8735d55e26139b0ec12303b21
+          export EXPECTED_HASH=946b0557e450a6430a0ba6b6bccee5bc12953ec8735d55e26139b0ec12303b21
           echo "Updated PATH: $PATH"
           clang --version
           
