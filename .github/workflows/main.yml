@@ -79,6 +79,8 @@ jobs:
       - name: 6.开始构建
         run: |
           export PATH=$GITHUB_WORKSPACE/kernel_workspace/clang/bin:$PATH
+          export KBUILD_BUILD_HOST=localhost
+          export KBUILD_BUILD_USER=smile
           echo "Updated PATH: $PATH"
           clang --version
           
